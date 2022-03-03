@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 function App() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -24,15 +27,15 @@ function App() {
 
   return (
     <div className="app">
-      <div className="container">
-        <div className="header-container">
-          <Header />
-          <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-        </div>
-        {renderPage()}
-        <div class="push"></div>
-        <Footer />
+      <div className="header-container flex-row space-between mx-2 my-2">
+        <Header />
+        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       </div>
+      <main className="flex-row center">
+        {renderPage()}
+      </main>
+      <div className="push"></div>
+      <Footer />
     </div>
   );
 }

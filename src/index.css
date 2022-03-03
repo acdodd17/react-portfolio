@@ -1,10 +1,188 @@
+main {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+:root {
+ 
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
+  min-height: 100%;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  margin:0;
+  padding: 0;
+  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color:var(--secondary) ;
+}
+
+img {
+  max-width: 100%;
+}
+
+form {
+  width: 40%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+li {
+  list-style: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+textarea {
+  width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center { 
+  justify-content: center;
+}
+
+.align {
+  align-items: center;
+  text-align: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+
+.mx-1 {
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
+
+.my-1 {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.my-2 {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
+
+.my-5 {
+  margin-top: var(--spacing-five);
+  margin-bottom: var(--spacing-five);
+}
+
+.px-1 {
+  padding-right: var(--spacing-one);
+  padding-left: var(--spacing-one);
+}
+
+.px-2 {
+  padding-right: var(--spacing-two);
+  padding-left: var(--spacing-two);
+}
+
+.py-1 {
+  padding-top: var(--spacing-one);
+  padding-bottom: var(--spacing-one);
+}
+
+.py-2 {
+  padding-top: var(--spacing-two);
+  padding-bottom: var(--spacing-two);
+}
+
+.nav {
+  padding: 0;
   margin: 0;
 }
 
-.footer, .push {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.about-img img {
+  
+  border-radius: 50%;
+}
+
+button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  background-color: var(--secondary);
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button[disabled] {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.push {
   height: 50px;
+}
+
+.contact-icon {
+  width: 30px;
 }
