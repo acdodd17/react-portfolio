@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 export default function Contact() {
   return (
     <div className='container'>
-        <div className='contact-title'>
-            <h2>Get in Touch!</h2>
+        <div className='contact-title align'>
+            <h2>Let's be in Touch!</h2>
         </div>
         <div className='container flex-row space-between align'>
             <div className='contact-info'>
@@ -38,7 +38,22 @@ export default function Contact() {
                 </div>
             </div>
             <div className='contact-form'>
-
+                <h3 className='align'>Send a Message</h3>
+                <form id="contact-form">
+                    <div>
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" name="name" />
+                    </div>
+                    <div>
+                        <label htmlFor="email">Email address:</label>
+                        <input type="email" name="email" />
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message:</label>
+                        <textarea name="message" rows="5"  />
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>
