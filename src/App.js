@@ -1,9 +1,17 @@
-import React from "react";
-import PortfolioContainer from "./components/PortfolioContainer"
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
+
   return (
-    <PortfolioContainer />
+    <div className="app">
+      <div className="container">
+        <Header />
+        <div class="push"></div>
+        <Footer />
+      </div>
+    </div>
   );
 }
 
