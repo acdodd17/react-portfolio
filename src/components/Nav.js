@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 
 function Nav({ currentPage, handlePageChange }) {
 
-    useEffect(() => {
-        document.title = currentPage
-    }, [handlePageChange]);
+    // useEffect(() => {
+    //     document.title = currentPage
+    // }, [handlePageChange]);
 
     return (
         <ul className='nav flex-row align center'>

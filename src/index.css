@@ -40,8 +40,6 @@ img {
   max-width: 100%;
 }
 
-
-
 input {
   font-size: 1rem;
   padding: 0.25rem;
@@ -143,6 +141,9 @@ nav li {
   margin: 0;
 }
 
+form div {
+  align-items: baseline;
+}
 
 .about-img img {
   
@@ -151,6 +152,8 @@ nav li {
 
 button {
   font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
   text-decoration: none;
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
