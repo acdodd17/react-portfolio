@@ -7,20 +7,27 @@ function Nav({ currentPage, handlePageChange }) {
     // }, [handlePageChange]);
 
     return (
-        <ul className='nav flex-row align center'>
-            <li className='nav-item mx-2'>
-                <a href='#about' onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}> About Me </a>
-            </li>
-            <li className='nav-item mx-2'>
-                <a href='#contact' onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}> Contact</a>
-            </li>
-            <li className='nav-item mx-2'>
-                <a href='#portfolio' onClick={() => handlePageChange('Portfolio')} className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}> Portfolio</a>
-            </li>
-            <li className='nav-item mx-2'>
-                <a href='#resume' onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}> Resume</a>
-            </li>
-        </ul>
+        <nav className='app__navbar'>
+            <div className='app__navbar-name'>
+                <h1 id="header-name" className='headtext__outfit-black'><a href='/' className='headtext__outfit-black'>Anna Dodd</a></h1>
+            </div>
+            <ul className='app__navbar-links'>
+                <li className='p__outfit'>
+                    <a href='#about' onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'active' : 'disabled'}> About Me </a>
+                </li>
+                <li className='p__outfit'>
+                    <a href='#contact' onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'active' : 'disabled'}> Contact</a>
+                </li>
+                <li className='p__outfit'>
+                    <a href='#portfolio' onClick={() => handlePageChange('Portfolio')} className={currentPage === 'Portfolio' ? 'active' : 'disabled'}> Portfolio</a>
+                </li>
+                <li className='p__outfit'>
+                    <a href='#resume' onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'active' : 'disabled'}> Resume</a>
+                </li>
+            </ul>
+            
+        </nav>
+        
     );
 }
 
