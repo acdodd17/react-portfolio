@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import Nav from "./components/Nav";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
-import Resume from "./components/Resume";
+import Nav from './components/Nav/Nav';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Portfolio from './components/Portfolio/Portfolio';
+import Resume from './components/Resume/Resume';
 import Footer from "./components/Footer";
 
 function App() {
@@ -26,15 +26,10 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="app">
-      <div className="header-container flex-row space-between mx-2 my-2">
-        <Header />
-        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      </div>
-      <main className="flex-row center">
-        {renderPage()}
-      </main>
-      <div className="push"></div>
+    <div>
+      <Header />
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
       <Footer />
     </div>
   );
