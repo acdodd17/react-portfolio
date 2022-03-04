@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
 import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -27,7 +26,6 @@ function App() {
 
   return (
     <div>
-      {/* <Header /> */}
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
