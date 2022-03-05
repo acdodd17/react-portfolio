@@ -36,32 +36,35 @@ export default function Contact() {
     };
 
   return (
-    <div className=''>
-        <div className=''>
-            <h2>Let's be in Touch!</h2>
+    <div className='container'>
+        <div className='heading'>
+            <h2 className='headtext__outfit-black'>Let's be in Touch!</h2>
         </div>
-        <div className=''>
-            <div className=''>
-                <h3 className=''>Contact Info</h3>
+        <div className='row'>
+            <div className='column contact'>
+                <div className='subheading'>
+                <h3 className='subheading p__outfit-black'>Contact Info</h3>
+                </div>
+                
                 <div>
-                    <p className=''>
-                        <a href='mailto:acdodd17@gmail.com' target='_blank' className=''>
+                    <p className='contact-info'>
+                        <a href='mailto:acdodd17@gmail.com' target='_blank' className='contact-info'>
                             <span className=''>
                                 <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-email-advertising-kiranshastry-lineal-kiranshastry-1.png" alt="Email" className="contact-icon"/>
                             </span>
                             acdodd17@gmail.com
                         </a>
                     </p>
-                    <p className=''>
-                        <a href='https://github.com/priyaravi23' target='_blank' className=''>
+                    <p className='contact-info'>
+                        <a href='https://github.com/priyaravi23' target='_blank' className='contact-info'>
                             <span className=''>
                                 <img src="https://img.icons8.com/ios/50/000000/github--v2.png" alt="GitHub profile" className="contact-icon" />
                             </span>
                             acdodd17
                         </a>
                     </p>
-                    <p className=''>
-                        <a href='https://www.linkedin.com/in/anna-dodd-9bb3a63a/' target="_blank" className=''>
+                    <p className='contact-info'>
+                        <a href='https://www.linkedin.com/in/anna-dodd-9bb3a63a/' target="_blank" className='contact-info'>
                             <span className=''>
                                 <img src="https://img.icons8.com/ios/50/000000/linkedin-circled--v4.png" alt="LinkedIn profile" className="contact-icon" />
                             </span>
@@ -70,18 +73,21 @@ export default function Contact() {
                     </p>
                 </div>
             </div>
-            <div className=''>
-                <h3 className='align'>Send a Message</h3>
-                <form id="" onSubmit={handleSubmit} className=''>
-                    <div>
+            <div className='column contact-form'>
+                <div className='subheading'>
+                    <h3 className=' subheading p__outfit-black'>Send a Message</h3>
+                </div>
+                
+                <form id="contact-form" onSubmit={handleSubmit} >
+                    <div className='field-wrap'>
                         <label htmlFor="name">Name:</label>
                         <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
                     </div>
-                    <div>
+                    <div className='field-wrap'>
                         <label htmlFor="email">Email address:</label>
                         <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
                     </div>
-                    <div>
+                    <div className='field-wrap'>
                         <label htmlFor="message">Message:</label>
                         <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
                     </div>
@@ -90,7 +96,7 @@ export default function Contact() {
                             <p className="error-text">{errorMessage}</p>
                         </div>
                     )}
-                    <button type="submit">Submit</button>
+                    <button type="submit" className='custom-button'>Submit</button>
                 </form>
             </div>
         </div>
