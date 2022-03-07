@@ -9,7 +9,7 @@ function Nav({ currentPage, handlePageChange }) {
     return (
         <nav className='app__navbar'>
             <div className='app__navbar-name'>
-                <h1 id="header-name" className='headtext__outfit-black'><a href='/' className='headtext__outfit-black'>Anna Dodd</a></h1>
+                <h1 id="header-name" className='headtext__outfit-black'><a href='/' onClick={() => handlePageChange('About')} className='headtext__outfit-black'>Anna Dodd</a></h1>
             </div>
             <ul className='app__navbar-links'>
                 <li className='p__outfit-black'>

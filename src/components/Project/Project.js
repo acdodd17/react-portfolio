@@ -2,6 +2,7 @@ import React from "react";
 
 
 function Project() {
+    
     const projects = [
         {
             title: 'Wine Share',
@@ -33,26 +34,31 @@ function Project() {
             deployedURL: 'https://acdodd17.github.io/password-generator/', 
             github: 'https://github.com/acdodd17/password-generator'
         }, 
-    ]
+    ];
 
     return (
         <div className="portfolio row">
-            {projects.map((project, i) => {
-                return (
-                    <div className="column portfolio-project" key={project.name}>
-                        <div  className="project" >
-                            <a href={project.deployedURL} target="_blank">
-                                <img src={require(`../../assets/images/_${i}.png`)} alt={project.title}  key={project.name} className="project-img" />
-                            </a>
-                            <h2 className="project-title p__outfit-black subheading flex__center">{project.title}</h2>
-                            <div className="project-links">
-                                <a href={project.github} target="_blank"><img src="https://img.icons8.com/ios/50/000000/github--v2.png" alt="Github Repository" id="project-icon"/></a>
-                                <a href={project.deployedURL} target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/link--v2.png" alt="Project URL" id="project-icon"/></a>
-                            </div>
+            {projects.map((project, i) => (
+                
+                <div className="column portfolio-project">
+                    <div  className="project" >
+                        <a href={project.deployedURL} target="_blank">
+                            <img src={require(`../../assets/images/_${i}.png`)} 
+                            alt={project.title} 
+                            className="project-img" 
+                            key={project.title}/>
+                        </a>
+                        <h2 className="project-title p__outfit-black subheading flex__center">{project.title}</h2>
+                        <div className="project-links">
+                            <a href={project.github} target="_blank"><img src="https://img.icons8.com/ios/50/000000/github--v2.png" 
+                            alt="Github Repository" id="project-icon"/></a>
+                            <a href={project.deployedURL} target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/link--v2.png" 
+                            alt="Project URL" id="project-icon"/></a>
                         </div>
                     </div>
-                )
-            })}
+                </div>
+                
+            ))}
         </div>
     )
 }

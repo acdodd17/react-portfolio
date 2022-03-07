@@ -2,9 +2,10 @@ import React from "react";
 import Project from "../Project/Project";
 
 function Portfolio() {
+   
     return (
         <div className="container">
-            <Project />
+            <Project  />
         </div>
     )
 }
