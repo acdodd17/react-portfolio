@@ -17,7 +17,7 @@ Clone this repository and use `npm install` to get started!
 Run `npm start` to connect to the server. 
 >Checkout the deployed site below: 
 >- [Anna's React Portfolio](https://acdodd17.github.io/react-portfolio/)
->- [Portfolio Screenshot](https://github.com/acdodd17/react-portfolio/blob/main/public/Portfolio-screenshot.png)
+>- ![Portfolio Screenshot](/public/Portfolio-screenshot.png)
 
 
 ### Contribution
