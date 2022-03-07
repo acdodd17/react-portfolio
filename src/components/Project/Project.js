@@ -42,7 +42,7 @@ function Project() {
                     <div className="column portfolio-project">
                         <div  className="project">
                             <a href={project.deployedURL} target="_blank">
-                                <img src={require(`../../assets/images/_${i}.png`)} alt={project.title}  className="project-img" />
+                                <img src={require(`../../assets/images/_${i}.png`)} alt={project.title}  key={project.name} className="project-img" />
                             </a>
                             <h2 className="project-title p__outfit-black subheading flex__center">{project.title}</h2>
                             <div className="project-links">
