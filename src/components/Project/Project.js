@@ -39,8 +39,8 @@ function Project() {
         <div className="portfolio row">
             {projects.map((project, i) => {
                 return (
-                    <div className="column portfolio-project">
-                        <div  className="project">
+                    <div className="column portfolio-project" key={project.name}>
+                        <div  className="project" >
                             <a href={project.deployedURL} target="_blank">
                                 <img src={require(`../../assets/images/_${i}.png`)} alt={project.title}  key={project.name} className="project-img" />
                             </a>
