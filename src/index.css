@@ -183,7 +183,8 @@ align-items: center;
 }
 
 
-.portfolio-project:hover, .app__navbar-links li:hover, .footer-icon:hover, #project-icon:hover, .contact-info:hover, button:hover {
+.portfolio-project:hover, .app__navbar-links li:hover, .footer-icon:hover, #project-icon:hover, 
+.contact-info:hover, button:hover, .proficiencies:hover, .resume-link:hover {
   transform: scale(1.1);
   transition-duration: 0.5s;
 }
@@ -249,6 +250,8 @@ align-items: center;
 
 .contact-form {
   background-color: var(--color-amber);
+  padding: 1rem;
+  width: 85%;
 }
 
 .field-wrap {
@@ -256,13 +259,19 @@ align-items: center;
   margin-bottom: 10px;
   display: flex;
 }
+
 .field-wrap input, textarea {
   width: 100%;
   flex-grow: 1;
 }
+
 label {
   margin-right: 1rem;
  
+}
+
+.proficiencies-list {
+  margin: 1rem;
 }
 
 .footer {
@@ -296,8 +305,8 @@ label {
       line-height: 67px;
   }
 
-  .field-wrap {
-
+  #contact-form {
+    width: 90%;
   }
 
   .contact-icon {
@@ -318,6 +327,16 @@ label {
     font-size: 48px;
   }
 
+}
+
+@media screen and (max-width: 2000px) {
+  .proficiencies-list li {
+    font-size: 24px;
+  }
+
+  .proficiencies h3 {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 1120px) {
@@ -346,6 +365,11 @@ label {
 @media screen and (max-width: 650px) {
   .container {
       padding: 4rem 2rem;
+  }
+
+  .contact,  .row {
+    justify-content: center;
+    align-items: center;
   }
 
   .p__outfit-black {
