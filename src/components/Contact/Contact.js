@@ -11,13 +11,13 @@ export default function Contact() {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             if (!isValid) {
-              setErrorMessage('Your email is invalid.');
+              setErrorMessage('Your email is invalid!');
             } else {
               setErrorMessage('');
             }
         } else {
             if (!e.target.value.length) {
-              setErrorMessage(`${e.target.name} is required.`);
+              setErrorMessage(`${e.target.name} is required!`);
             } else {
               setErrorMessage('');
             }
@@ -40,8 +40,8 @@ export default function Contact() {
         <div className='heading'>
             <h2 className='headtext__outfit-black'>Let's be in Touch!</h2>
         </div>
-        <div className='row'>
-            <div className='column contact'>
+        <div className='row contact'>
+            <div className='column '>
                 <div className='subheading'>
                 <h3 className='subheading p__outfit-black'>Contact Info</h3>
                 </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                     </div>
                     {errorMessage && (
                         <div>
-                            <p className="error-text">{errorMessage}</p>
+                            <p className="error-message">{errorMessage}</p>
                         </div>
                     )}
                     <button type="submit" className='custom-button'>Submit</button>

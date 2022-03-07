@@ -1,12 +1,10 @@
 import React from "react";
-import projects from '../../constants/data';
+import Project from "../Project/Project";
 
 function Portfolio() {
     return (
         <div className="container">
-            <div className="row">
-                
-            </div>
+            <Project />
         </div>
     )
 }

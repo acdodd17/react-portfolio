@@ -18,6 +18,11 @@
   font-family: var(--font-base);
 }
 
+/* body {
+  background-image: url("./assets/images/germany.jpg");
+  background-size: cover;
+} */
+
 a {
   color: unset;
   text-decoration: none;
@@ -47,7 +52,7 @@ align-items: center;
 }
 
 .custom-button:hover {
-  background-color: var(--color-amber);
+  background-color: var(--color-red);
   color: var(--color-black);
 }
 
@@ -92,6 +97,7 @@ align-items: center;
   align-items: center;
   padding: 1rem 2rem;
   background: var(--color-black);
+  
 }
 
 .app__navbar-name {
@@ -128,14 +134,15 @@ align-items: center;
 }
 
 .container {
-  padding: 4rem 6rem;
-  min-height: 100vh;
+  padding: 2rem 4rem;
+  min-height: 75vh;
 }
 
 .row {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .column {
@@ -163,6 +170,55 @@ align-items: center;
   padding: 2rem;
 }
 
+.profile-img {
+  border-radius: 50%;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.portfolio-project {
+  flex: 30%;
+}
+
+
+.portfolio-project:hover, .app__navbar-links li:hover, .footer-icon:hover, #project-icon:hover, .contact-info:hover, button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+.project {
+  position: relative;
+  width: 100%;
+}
+
+
+.project-links {
+  position: absolute;
+  bottom: 75px;
+  right: 10px;
+}
+
+#project-icon {
+  width: 25px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+#project-icon:hover {
+  background-color: var(--color-amber);
+}
+
+.about-text{
+  text-indent: 2rem;
+}
+
+.error-message {
+  font-weight: bold;
+  color: var(--color-red);
+}
+
 .heading {
   /* background: var(--color-amber); */
   width: 100%;
@@ -174,15 +230,25 @@ align-items: center;
   margin: 0 2rem;
 }
 
+.resume-link:hover {
+  color:var(--color-red);
+}
 
-
+.contact {
+  background-color: var(--color-grey);
+}
 .contact-info a{
   display: flex;
   align-items: center;
+  font-weight: bold;
+}
+
+.contact-info:hover {
+  color: var(--color-red)
 }
 
 .contact-form {
-  background-color: var(--color-grey);
+  background-color: var(--color-amber);
 }
 
 .field-wrap {
