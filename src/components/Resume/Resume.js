@@ -31,7 +31,7 @@ function Resume() {
             </div>
             <div className="row">
                 <div className="column">
-                    <a href="Resume.pdf" download="Sample" className="resume-link p__outfit-black flex__center">Click to download my resume!</a>
+                    <a href="Anna_Dodd.pdf" download="Sample" className="resume-link p__outfit-black flex__center">Click to download my resume!</a>
                 </div>
             </div>
         </div>

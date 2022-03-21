@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../../assets/images/Hanging-Rock.jpg';
+import Profile from '../../assets/images/Profile.png';
 
 function About() {
   return (
