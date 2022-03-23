@@ -136,11 +136,13 @@ align-items: center;
 .container {
   padding: 2rem 4rem;
   min-height: 75vh;
+  display: flex;
+  justify-content: center;
 }
 
 .row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -179,7 +181,13 @@ align-items: center;
 }
 
 .portfolio-project {
+
   flex: 30%;
+}
+
+.portfolio-row {
+  display: flex;
+  justify-content: center;
 }
 
 

@@ -6,10 +6,18 @@ import p2 from '../../assets/images/p2.png';
 import p3 from '../../assets/images/p3.png';
 import p4 from '../../assets/images/p4.png';
 import p5 from '../../assets/images/p5.png';
+import p6 from '../../assets/images/p6.png';
+
 
 function Project() {
     
     const projects = [
+        {
+            title: 'Social Rolls',
+            deployedURL: 'https://socialrolls.herokuapp.com/', 
+            github: 'https://github.com/KrisSmith7/roll-initiative', 
+            img: p6
+        }, 
         {
             title: 'Wine Share',
             deployedURL: 'https://wine-share.herokuapp.com/', 
@@ -39,13 +47,7 @@ function Project() {
             deployedURL: 'https://acdodd17.github.io/work-day-schedule/', 
             github: 'https://github.com/acdodd17/work-day-schedule',
             img: p3
-        }, 
-        {
-            title: 'Password Generator',
-            deployedURL: 'https://acdodd17.github.io/password-generator/', 
-            github: 'https://github.com/acdodd17/password-generator',
-            img: p4
-        }, 
+        }
     ];
 
     return (
