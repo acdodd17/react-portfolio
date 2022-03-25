@@ -11,10 +11,15 @@ function About() {
         <div className="column">
           <h2 className='heading headtext__outfit-black'>About Me</h2>
           <h4 className='subheading p__outfit-black'>Hi! My name is Anna.</h4>
-              <p className='p__outfit about-text'> I am a Raleigh, North Carolina native and former educator turned web developer.
-                As an elementary school teacher and later a Magnet Program Coordinator for an elementary Design and Computer Sciences program, 
-                I have had the opportunity to hone my design and digital marketing skills to improve communication with families, creating beautiful webpages that offer a great user experience. 
-                Currently, I am continuing to grow my skills in web development as a student in a Full-Stack Web Development bootcamp through UNC Chapel Hill. 
+              <p className='p__outfit about-text'> 
+              Raleigh, NC native and educator turned Full-stack web developer drawing on background in education, program management and marketing to develop engaging and accessible 
+              user experiences on the web. 
+              A recent graduate with a certificate in full-stack web development from the University of North Carolina at Chapel Hill. Experience building web pages from front to back 
+              implementing the MERN stack. I have quickly gained and grown my skills in using foundations in HTML, CSS, and JavaScript along with React frameworks to create beautifully 
+              focused user interfaces and have successfully created back-end structures to manage user data and authentication with Node.js dependencies, both SQL and NoSQL databases, 
+              and JWT authentication. I am a passionate and creative problem solver, persistently pursuing new learning and focused on continuing to improve upon my ability to create 
+              responsive web applications that provide meaningful user experiences. I am a skilled communicator and perseverant team player excited to work with and learn from others as 
+              part of a development team. 
               </p>
         </div>
       </div>
