@@ -136,8 +136,6 @@ align-items: center;
 .container {
   padding: 2rem 4rem;
   min-height: 75vh;
-  display: flex;
-  justify-content: center;
 }
 
 .row {
