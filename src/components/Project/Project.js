@@ -4,7 +4,7 @@ import p0 from '../../assets/images/p0.png';
 import p1 from '../../assets/images/p1.png';
 import p2 from '../../assets/images/p2.png';
 import p3 from '../../assets/images/p3.png';
-import p4 from '../../assets/images/p4.png';
+// import p4 from '../../assets/images/p4.png';
 import p5 from '../../assets/images/p5.png';
 import p6 from '../../assets/images/p6.png';
 
@@ -16,7 +16,8 @@ function Project() {
             title: 'Social Rolls',
             deployedURL: 'https://socialrolls.herokuapp.com/', 
             github: 'https://github.com/KrisSmith7/roll-initiative', 
-            img: p6
+            img: p6,
+            description: 'React, Tailwind, Node, Express, GraphQL, MongoDB'
         }, 
         {
             title: 'Wine Share',

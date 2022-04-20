@@ -134,7 +134,7 @@ align-items: center;
 }
 
 .container {
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   min-height: 75vh;
 }
 
@@ -200,11 +200,21 @@ align-items: center;
   width: 100%;
 }
 
+.project a { 
+  position: relative;
+}
 
 .project-links {
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 75px;
   right: 10px;
+}
+
+.project-tech {
+  background-color:rgba(190, 183, 164, .6);
+  position: absolute;
 }
 
 #project-icon {
@@ -242,8 +252,14 @@ align-items: center;
 }
 
 .contact {
+  /* background-color: var(--color-grey); */
+  margin: 1rem 5rem;
+}
+
+.contact-col .subheading h3 {
   background-color: var(--color-grey);
 }
+
 .contact-info a{
   display: flex;
   align-items: center;
